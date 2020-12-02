@@ -1,0 +1,24 @@
+@import '../variables';
+
+.task-list {
+    display: flex;
+    flex-direction: row;
+
+    .task-item {
+        cursor: pointer;
+        padding: 10px;
+
+        .task-icon {
+            &.complete {
+                color: $primary;
+            }
+            &.incomplete {
+                color: #f54545;
+            }
+        }
+
+        .task-name {
+            font-size: 1rem;
+        }
+    }
+}
